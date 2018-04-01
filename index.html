@@ -1,14 +1,14 @@
 <!doctype html>
-    <html ng-app="todoApp">
+    <html ng-app="test">
       <head>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <script src="todo.js"></script>
         <link rel="stylesheet" href="todo.css">
       </head>
       <body>
-        <h2>Todo</h2>
-        <div ng-controller="TodoListController as todoList">
-          <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+        <h2>Test Angular JS</h2>
+        <div ng-controller="x as list">
+          <span>{{list.remaining()}} of {{todoList.todos.length}} remaining</span>
           [ <a href="" ng-click="todoList.archive()">archive</a> ]
           <ul class="unstyled">
             <li ng-repeat="todo in todoList.todos">
